@@ -3,14 +3,14 @@ package com.waiyanhtet.enums;
 public class EnumWithAbstract {
 	public static void main(String[] args) {
 
-		for(Days3 day : Days3.values()) {
+		for(Days day : Days.values()) {
 			day.log();
 		}
 
 	}
 }
 
-enum Days3 {
+enum Days {
 
 	SUN("Sunday") {
 		public void log() {
@@ -46,7 +46,7 @@ enum Days3 {
 
 	public abstract void log();
 
-	Days3(String viewName) {
+	Days(String viewName) {
 		this.viewName = viewName;
 	}
 
